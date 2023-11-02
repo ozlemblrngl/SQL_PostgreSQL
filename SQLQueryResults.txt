@@ -2,7 +2,6 @@
 
 Select product_name, quantity_per_unit from products;
 
-
 --2.Ürün Numaralarını (ProductID) ve Product isimlerini (ProductName) değerlerini almak için sorgu yazın. Artık satılmayan ürünleri (Discontinued) filtreleyiniz.
 
 Select product_id,product_name from products
