@@ -34,8 +34,10 @@ Select * from products
 Where product_name LIKE '%i'
 
 --9.Ürün birim fiyatlarına %18’lik KDV ekleyerek listesini almak (ProductName, UnitPrice, UnitPriceKDV) için bir sorgu yazın.
---*******HOCAYA SORULACAK
+SELECT product_name, unit_price, unit_price * 0.18 + unit_price AS unit_price_kdv
+FROM products
 
+--2.çözüm
 --Select SUM((unit_price*0.18)) AS "unit_price_kdv" from products;
 
 Select a.unit_price, (a.unit_price+a.unit_price*18/100) AS unit_price_kdv from products AS a
