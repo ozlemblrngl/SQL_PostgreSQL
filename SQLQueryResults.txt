@@ -447,22 +447,27 @@ where unit_price between 50 and 100
 ORDER BY unit_price 
 
 --78. 1 temmuz 1996 ile 31 Aralık 1996 tarihleri arasındaki siparişlerin (Orders), SiparişID (OrderID) ve SiparişTarihi (OrderDate) bilgileri
+
 Select order_id , order_date from orders
 where order_date between '1996-07-01' and '1996-12-31'
 
 --79. Ülkesi (Country) YA Spain, Ya France, Ya da Germany olan müşteriler
+
 select company_name , country from customers
 where country = 'Spain' OR country = 'France' OR country = 'Germany'
 
 --80. Faks numarasını bilmediğim müşteriler
+
 Select company_name , fax from customers
 where fax is null
 
 --81. Müşterilerimi ülkeye göre sıralıyorum:
+
 Select company_name , country from customers
 ORDER BY country
 
 --82. Ürünlerimi en pahalıdan en ucuza doğru sıralama, sonuç olarak ürün adı ve fiyatını istiyoruz
+
 Select product_name, unit_price from products
 ORDER BY unit_price desc
 
