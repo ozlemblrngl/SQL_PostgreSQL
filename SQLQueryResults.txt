@@ -472,6 +472,7 @@ Select product_name, unit_price from products
 ORDER BY unit_price desc
 
 --83. Ürünlerimi en pahalıdan en ucuza doğru sıralasın, ama stoklarını küçükten-büyüğe doğru göstersin sonuç olarak ürün adı ve fiyatını istiyoruz
+
 Select product_name, unit_price , units_in_stock from products
 ORDER BY unit_price desc
 
